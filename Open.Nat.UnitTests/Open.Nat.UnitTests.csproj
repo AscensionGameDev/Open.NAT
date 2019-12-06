@@ -3,6 +3,8 @@
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
+    <ProjectGuid>{7A65D2F2-BFB5-4BE1-A54D-484A394DE745}</ProjectGuid>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>Open.Nat.snk</AssemblyOriginatorKeyFile>
@@ -14,7 +16,6 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Open.Nat.UnitTests</RootNamespace>
-    <AssemblyName>Open.Nat.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -25,7 +26,6 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Open.Nat.UnitTests</RootNamespace>
-    <AssemblyName>Open.Nat.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -36,7 +36,6 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Open.Nat.UnitTests</RootNamespace>
-    <AssemblyName>Open.Nat.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -47,7 +46,6 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Open.Nat.UnitTests</RootNamespace>
-    <AssemblyName>Open.Nat.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -79,7 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Open.Nat\Open.Nat.csproj">
-      <Project>{F5D74163-145F-47BF-83DC-D0E07249C6CA}</Project>
+      <Project>{0489D561-C902-4BD7-A479-6F0738DCD5EB}</Project>
       <Name>Open.Nat</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 		<metadata>
-			<id>Open.NAT</id>
+			<id>AscensionGameDev.Open.NAT</id>
 			<version>$version$</version>
-			<title>Open.NAT</title>
-			<authors>Alan McGovern, Ben Motmans, Lucas Ontivero</authors>
+			<title>AscensionGameDev.Open.NAT</title>
+			<authors>Ascension Game Dev, Alan McGovern, Ben Motmans, Lucas Ontivero</authors>
 			<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-			<projectUrl>https://github.com/lontivero/Open.NAT</projectUrl>
-			<iconUrl>http://github.com/lontivero/Open.Nat/raw/gh-pages/images/logos/64.jpg</iconUrl>
+			<projectUrl>https://github.com/AscensionGameDev/Open.NAT</projectUrl>
+			<iconUrl>http://github.com/AscensionGameDev/Open.Nat/raw/gh-pages/images/logos/64.jpg</iconUrl>
 			<requireLicenseAcceptance>false</requireLicenseAcceptance>
 			<description>
 				Open.NAT is a lightweight and easy-to-use class library to allow port forwarding in NAT devices (Network Address Translator) that support Universal Plug and Play (UPNP) and/or Port Mapping Protocol (PMP).
@@ -17,7 +17,7 @@
 			<copyright>Please see LICENSE for more details.</copyright>
 			<tags>NAT TRAVERSAL UPNP PMP PORT FORWARD .NET MONO</tags>
 			<releaseNotes>
-				Please look at https://github.com/lontivero/Open.NAT/blob/master/CHANGELOG.md
+				Please look at https://github.com/AscensionGameDev/Open.NAT/blob/master/CHANGELOG.md
 			</releaseNotes>
 		</metadata>
 		<files>

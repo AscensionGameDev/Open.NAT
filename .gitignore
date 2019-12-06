@@ -14,3 +14,7 @@ packages/
 
 #ignore Resharper folders
 _ReSharper*/
+
+
+.DS_Store
+Thumbs.db
