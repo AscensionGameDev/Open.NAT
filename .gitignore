@@ -15,6 +15,7 @@ packages/
 #ignore Resharper folders
 _ReSharper*/
 
+*.nupkg
 
 .DS_Store
 Thumbs.db
