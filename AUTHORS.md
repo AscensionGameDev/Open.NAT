@@ -1,14 +1,22 @@
-Open.Nat is a Mono.Nat fork
+# Authors
 
-= Mono.Nat authors 
+_AscensionGameDev.Open.Nat is an Open.Nat Fork_
+
+_Open.Nat is a Mono.Nat fork_
+
+## Mono.Nat
+
+### Authors
 Alan McGovern <alan.mcgovern@gmail.com>
 Ben Motmans <ben.motmans@gmail.com>
 
-= Open.Nat author
+## Open.Nat
+
+### Authors
 Lucas Ontivero <lucasontivero@gmail.com>
 
-= Open.Nat contributors
-Michaël Catanzariti <catanzariti@yahoo.com>
+### Contributors
+Michaï¿½l Catanzariti <catanzariti@yahoo.com>
 Scott Richmond <s.t.richmond@gmail.com>
 Bart van der Werf <bluelive@gmail.com>
 theTwister <lee.foulger.94@gmail.com>

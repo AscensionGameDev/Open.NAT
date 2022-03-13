@@ -1,0 +1,27 @@
+name: Publish nuget packages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      VERSION_PREFIX: '3.0.0.${{ github.run_number }}'
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+    - name: Package
+      run: dotnet pack --include-source --include-symbols -c Release -p:SymbolPackageFormat=snupkg --output nupkgs -p:Version='${{ env.VERSION_PREFIX }}'
+    - name: Publish
+      run: dotnet nuget push 'nupkgs/AscensionGameDev.Open.NAT.${{ env.VERSION_PREFIX }}.nupkg' --api-key ${{ secrets.NUGET_API_KEY_ASCENSIONGAMEDEV_OPEN_NAT }} --source https://api.nuget.org/v3/index.json

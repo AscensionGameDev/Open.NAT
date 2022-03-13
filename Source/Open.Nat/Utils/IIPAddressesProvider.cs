@@ -1,9 +1,7 @@
 //
 // Authors:
-//   Alan McGovern  alan.mcgovern@gmail.com
-//   Lucas Ontivero lucas.ontivero@gmail.com
+//   Lucas Ontivero lucasontivero@gmail.com 
 //
-// Copyright (C) 2006 Alan McGovern
 // Copyright (C) 2014 Lucas Ontivero
 //
 // Permission is hereby granted, free of charge, to any person obtaining
@@ -27,11 +25,14 @@
 //
 
 using System.Collections.Generic;
+using System.Net;
 
 namespace Open.Nat
 {
-	internal abstract class RequestMessageBase
-	{
-		public abstract IDictionary<string, object> ToXml();
-	}
+    internal interface IIPAddressesProvider
+    {
+        IEnumerable<IPAddress> DnsAddresses();
+        IEnumerable<IPAddress> GatewayAddresses();
+        IEnumerable<IPAddress> UnicastAddresses();
+    }
 }

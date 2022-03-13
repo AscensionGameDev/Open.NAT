@@ -1,3 +1,23 @@
+# Changelog
+
+## v3
+### Version 3.0.0
+* Re-organized projects
+  * Moved Open.Nat to Source/Open.Nat
+  * Re-created Open.Nat.UnitTests as Tests/Open.Nat.Tests
+* Open.Nat.sln
+  * Removed Open.Nat.ConsoleTest (did not delete)
+  * Deleted nuget binaries
+  * Added editorconfig
+* Open.Nat
+  * targets only netstandard2.0
+  * minor cleanup of dead code
+* Open.Nat.Tests
+  * targets net6.0
+  * broken IPv6 test disabled
+
+## v2
+
 ### Version 2.1.0
 * Fixes [defect #43](https://github.com/lontivero/Open.NAT/issues/43).
 UpnpNatDevice.CreatePortMapAsync does not await retry
@@ -11,7 +31,7 @@ GetSpecificMappingAsync under LINKSYS WRT1900AC AC1900 fails with 501
 
 ### Version 2.0.11
 * Allows the creation of mappings with arbitrary Private IP address.
-* Fixes [defect #22](https://github.com/lontivero/Open.NAT/issues/22). 
+* Fixes [defect #22](https://github.com/lontivero/Open.NAT/issues/22).
 Routers failed with 404 when service control url had a question mark (?) - DD-WRT Linux base router (and others probably) fails with
 402-InvalidArgument when index is out of range. - Some routers retuns invalid mapping entries with empty internal client.
 
@@ -20,13 +40,13 @@ GetSpecificMappingEntry fails with
 402-InvalidArgument in DD-WRT Linux base router when mapping is not found.
 
 ### Version 2.0.10
-Fixes [defect #20](https://github.com/lontivero/Open.NAT/issues/20). Absolute service control URL path and query miscalculated.   
+Fixes [defect #20](https://github.com/lontivero/Open.NAT/issues/20). Absolute service control URL path and query miscalculated.
 
 ### Version 2.0.9
 * Fixes [defect #16](https://github.com/lontivero/Open.NAT/issues/16)
 
 ### Version 2.0.8
-* Fixes several defects. [#10](https://github.com/lontivero/Open.NAT/issues/10), 
+* Fixes several defects. [#10](https://github.com/lontivero/Open.NAT/issues/10),
 [#11](https://github.com/lontivero/Open.NAT/issues/11), [#12](https://github.com/lontivero/Open.NAT/issues/12),
 [#13](https://github.com/lontivero/Open.NAT/issues/13) and [#14](https://github.com/lontivero/Open.NAT/issues/12)
 
@@ -34,6 +54,8 @@ Fixes [defect #20](https://github.com/lontivero/Open.NAT/issues/20). Absolute se
 * Thus version breaks backward compatibility with v1.
 * Changes the event-based nature of discovery to an asynchronous one.
 * Managed port mapping timelife.
+
+## v1
 
 ### Version 1.1.0
 * Fix for SSDP Location header.
